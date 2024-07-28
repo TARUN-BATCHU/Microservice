@@ -19,6 +19,8 @@
         <module>productService</module>
         <module>orderService</module>
         <module>inventoryService</module>
+        <module>discovery-server</module>
+        <module>apiGateway</module>
     </modules>
 
     <properties>
@@ -29,6 +31,13 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
